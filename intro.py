@@ -107,21 +107,43 @@ import csv
 # print(nums.count(45))
 
 #2d lists and arrays :
-simple_array = [[2,1,4], [9,54,23], [947,23,4]]
-print(simple_array)
-simple_array[1].append(4)
-print(simple_array) #this makes the new value as  : 9,54,23 -> 9,54,23,4
+# simple_array = [[2,1,4], [9,54,23], [947,23,4]]
+# print(simple_array)
+# simple_array[1].append(4)
+# print(simple_array) #this makes the new value as  : 9,54,23 -> 9,54,23,4
 
-#Reading and writing to a text file
-file = open("Numbers.txt", "w")
-file.write("4, ")
-file.write("3, ")
-file.write("45, ")
-file.close()
+# #Reading and writing to a text file
+# file = open("Numbers.txt", "w")
+# file.write("4, ")
+# file.write("3, ")
+# file.write("45, ")
+# file.close()
 
 
 #Reading , writing to a  csv file
-file = open("apps.csv" , "w")
-newRecord = "ravi, 25 , Aries\n"
-file.write(str(newRecord))
-file.close()
+# file = open("apps.csv" , "w")
+# newRecord = "ravi, 25 , Aries\n"
+# file.write(str(newRecord))
+# file.close()
+
+# file = open ("stars.csv" , "a")
+# name = input("enter your name ")
+# age = input ("enter your age ")
+# newRecord = name + " " + age 
+# file.write(str(newRecord))
+# file.close()
+
+#subprogram
+def save_var():
+    num = int(input("enter a number"))
+    return num
+
+def count(num):
+ n = 1 
+ while n <= num:
+    print(n)
+    n = n + 1
+def main():
+   num = save_var()
+   count(num)
+main()   
