@@ -1,5 +1,6 @@
 import random
 from array import *
+import csv
 # print("Hello, what is your name₹?")
 # name = input()
 # print("Your name is " + name)
@@ -111,3 +112,16 @@ print(simple_array)
 simple_array[1].append(4)
 print(simple_array) #this makes the new value as  : 9,54,23 -> 9,54,23,4
 
+#Reading and writing to a text file
+file = open("Numbers.txt", "w")
+file.write("4, ")
+file.write("3, ")
+file.write("45, ")
+file.close()
+
+
+#Reading , writing to a  csv file
+file = open("apps.csv" , "w")
+newRecord = "ravi, 25 , Aries\n"
+file.write(str(newRecord))
+file.close()
