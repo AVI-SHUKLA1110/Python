@@ -1,0 +1,1 @@
+#method - a function contained within a class 
