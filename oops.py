@@ -34,4 +34,18 @@ class Person:
 person1 = Person("aman" , 26)
 person2 = Person("hercueles" , 30)
 
+class user:
+   def __init__(self,username, email , password):
+    self.username = username
+    self.email = email
+    self.password = password
+
+   def say_hi(self, user):
+      print(f"Sending message to {user.username}: Hi {user.username}")
+
+user1 = user("dantheman", "dan@123", "use123")
+user2 = user("abhishek","ashikla693@gmail.com", "user1" )
+
+user1.say_hi(user2)
+
 
