@@ -42,10 +42,12 @@ class user:
 
    def say_hi(self, user):
       print(f"Sending message to {user.username}: Hi {user.username}")
-
+      
 user1 = user("dantheman", "dan@123", "use123")
 user2 = user("abhishek","ashikla693@gmail.com", "user1" )
 
 user1.say_hi(user2)
 
+user1.name = "saiyam"
+print(user1.name)
 
