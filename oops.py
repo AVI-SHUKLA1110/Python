@@ -37,17 +37,24 @@ person2 = Person("hercueles" , 30)
 class user:
    def __init__(self,username, email , password):
     self.username = username
-    self.email = email
+    self._email = email
     self.password = password
 
    def say_hi(self, user):
       print(f"Sending message to {user.username}: Hi {user.username}")
       
+   def clean_email(self):
+       return self._email.lower().strip()
+   
 user1 = user("dantheman", "dan@123", "use123")
-user2 = user("abhishek","ashikla693@gmail.com", "user1" )
+user2 = user("abhishek","ashikla693@gmail.com   ", "user1" )
 
 user1.say_hi(user2)
 
 user1.name = "saiyam"
 print(user1.name)
+print(user2._email)
+print(user2.clean_email)
+#making data attributes protected - means not being able to read outside this class
+#using getter and setter functions 
 
